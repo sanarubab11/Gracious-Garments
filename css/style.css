@@ -1,0 +1,68 @@
+ :root{
+--primary-color:#ffff;
+--dark:;
+--light:;
+ }
+ 
+ 
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+ 
+
+}
+#page_one{
+    border:2px solid black;
+    padding: 10px 10px 10px 10px;
+    object-fit: contain;
+
+}
+#row_1,#row_2,#row_3,#row_4,#row_5{
+    padding-top: 50px;
+    margin: 20px;
+    /* transition: all 0.3s; */
+
+  
+ 
+}
+.card{
+    transition: all 0.3s;
+}
+.cards:hover{
+transform: scale(1.10);
+
+}
+/* goto_top start  */
+.goto_top {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background:#000;
+    bottom:25px;
+    right: 20px;
+   
+     text-decoration: none;
+     text-align: center;
+     justify-content: center;
+     text-decoration: none;
+     line-height: 20px;
+     color:  #948360;
+   
+     border-radius: 5px;
+      padding-left: 10px; 
+      padding-right:10px;
+      padding-top:10px ;
+    
+     transition: all 0.5s ease
+  
+       }
+       .goto_top:hover{
+background-color: #fff;
+       }
+       /* goto_top end  */
+

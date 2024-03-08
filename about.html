@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracious Garments</title>
+    <!-- css links  -->
+    <link rel="stylesheet" href="./css/about us.css">
+      <!-- bootsstrap link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- fontawsame link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- aso links  -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+</head>
+<style>
+
+  :root{
+   --primary-color: #948360 ;
+   --light-color: #fff; 
+   --dark-color:#000;
+   --text-color::
+   }
+  html{
+   scroll-behavior: smooth;
+  } 
+   
+   
+   
+   *{
+       margin: 0%;
+       padding:0%;
+       box-sizing: border-box;
+   
+   }
+   body {
+       font-family: "Roboto", sans-serif;
+       background:var(--light-color) ;
+   }
+
+   /* email start  */
+.email {
+   font-family: 'Roboto', sans-serif;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* height: 50%; */
+   padding: 10px 70px;
+   padding-left: -10px;
+   background:  #948360;
+   color: #fff;
+   cursor: pointer;
+
+}
+
+.email i {
+   font-size: 20px;
+   margin: 5px 5px;
+
+}
+/* email end */
+   /* navbar  */
+      .logo{
+   width:50px;
+   height:50px; 
+   
+   border-radius:50%;
+   background-color: var(--primary-color) !important;
+      } 
+      .logo:hover{
+   transform: scale(1.15);
+      }
+      .logo_text{
+       color: var(--primary-color) !important;
+       font-size: larger;
+       transition: all 0.3s ease;
+      }
+      .logo_text:hover{
+       color: var(--light-color) !important;
+       transform: scale(1.15);
+      
+      }
+   
+      .navbar-toggler{
+       background-color: var(--primary-color) !important;
+    
+      }
+      .menue_icon{
+       color: var(--dark-color) !important;
+      
+      }
+   .navbar{
+       /* background-color: #000 !important; */
+   min-height:100px;
+   width: 100%;
+   /* background:var(--dark-color) !important; */
+   
+   }
+   .nav-link{
+       width: max-content ;
+       font-size:16px ;
+       position: relative;
+       cursor: pointer ;
+       color:  var(--primary-color) !important;
+       /* margin-top: 100px auto ; */
+    
+
+
+    
+      
+   
+   }
+   .nav-link::after{
+
+ position: absolute;
+    content: "" ;
+    bottom: -5px !important;
+    left: 0;
+    height: 4px!important ;
+    width: 100%!important ;
+    background: var(--primary-color) !important;
+   
+    transition: 0.3s !important;
+    /* transition-timing-function: ease-in-out ; */
+    /* transform: scaleX(0) ; */
+
+   }
+
+  
+   .nav-link:hover::before{
+       /* transform: scaleX(1) ; */
+       transform: scale(1.15);
+      
+     
+     
+   }
+   
+        
+    /* footer navlogo  start */
+          footer{
+            width: 100%;
+            margin-top: 600px;
+          } 
+    #navlogo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+
+          .single-box p{
+            color:#fff;
+            line-height: 1.9;
+            
+            }
+            .single-box ul{
+                list-style: none;
+                padding: 0;
+              text-decoration: none;
+              }
+              .single-box ul li a{
+              
+              
+              
+              color:#fff;
+              line-height: 2.5;
+              font-size:100;
+              }
+              .single-box ul li a:hover{
+                  color: #8d691d;
+                  text-decoration: underline;
+              }
+              #h22{
+                color: grey;
+                font-size: 30px;
+                
+                    }
+                    #iconss{
+                font-size: 20px;
+                color: #948360;
+                display: flex;
+                justify-content: space-evenly;
+                margin: 5px;
+                transition: all 0.3s ease;
+                    }
+                    #iconss:hover{
+                color: #e4c27a;
+                font-size: 30px;
+                    }
+                    p:hover{
+                color:#000;
+                transform:scale(1.10) ;
+                    }
+                    @media(max-width:767px){
+                        .single-box{
+                            margin-bottom: 50px;
+                        }
+                            }
+                            @media(min-width:768px) and (max-width:991px){
+                        .single-box{
+                            margin-bottom: 50px;
+                        }
+                            }
+              /* footer navlogo end */
+   </style>
+
+<body>
+  <!-- email start  -->
+<div class="email">
+  <p data-aos="fade-right"
+  data-aos-duration="3000">  Phone : +92216645273 , Email : Graciousgarment.com </p>
+  <p>
+    <i class="fa-brands fa-facebook" data-aos="flip-up"
+    data-aos-duration="3000"></i>
+    <i class="fa-brands fa-twitter" data-aos="flip-up"
+    data-aos-duration="3000"></i>
+    <i class="fa-brands fa-whatsapp"data-aos="flip-up"
+    data-aos-duration="3000"></i>
+    <i class="fa-brands fa-linkedin"data-aos="flip-up"
+    data-aos-duration="3000"></i>
+
+  </p>
+</div>
+<!-- email end  -->
+  <!-- nav start  -->
+<nav class="navbar my_navbar navbar-expand-lg bg-body-tertiary ">
+
+    <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="Gracious Garment" class="logo"data-aos="zoom-in"
+      data-aos-duration="3000"> <b class="logo_text">
+        Gracious Garments</b></a>
+    <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon menue_icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item  mx-3 ">
+          <a class="nav-link  active" aria-current="page" href="./index.html">Home</a>
+        
+        
+          
+        </li>
+
+        <li class="nav-item mx-3">
+          <a class="nav-link " href="./about.html">About</a>
+        </li>
+
+
+        
+
+
+
+        <!-- <li class="nav-item mx-3  ">
+
+          <a class="nav-link "  href="./category.html">Product</a>
+        </li> -->
+
+
+
+      
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="./category.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+         Product
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./casualmen.html">Men casual wear</a></li>
+            <li><a class="dropdown-item" href="./casualwomen.html">women summer collection</a>
+              
+            </li>
+            
+            
+            <li><a class="dropdown-item" href="./casualkids.html">Kids</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item  mx-3">
+          <a class="nav-link " href="Ourteam.html">Team</a>
+        </li>
+
+
+
+        <li class="nav-item mx-3 ">
+          <a class="nav-link " href="./Contact.html">Contact Us</a>
+        </li>
+
+
+      </ul>
+      <i class="fa-regular fa-user My_icons px-3"></i>
+
+      <i class="fa fas-regular fa-bag-shopping  My_icons px-3"></i>
+
+      <i class="fa-solid fa-magnifying-glass My_icons px-3"></i>
+
+
+    </div>
+ 
+</nav>
+<!-- nav end  -->
+<h1>ABOUT <span>US</span></h1>
+<div class="line">
+  <div></div>
+  <div></div> 
+  <div></div> 
+</div> 
+    
+<div class="image_container">
+  <img src="./images/about-us (1).jpg" alt="" srcset="">
+  
+  <div class="accordion accordion-flush  accorin" id="accordionFlushExample">
+    <div class="accordion-item ">
+      <h2 class="accordion-header bg-red">
+        <button class="accordion-button BTTN_2  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne bg-dark" id="ac1">
+          OUR PHILOSOPHY
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body ">GRACIOUS GARMENTS is selling various types of GARMENTS for both MEN and WOMEN. The company advertises by distributing the pamphlets, advertising on television and so on. Due to rapid development in internet field, the company decides to launch a website where people will get all the information about the various products available with them easily.</div>
+      </div>
+    </div>
+     <br>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo bg-dark " id="ac1">
+          ABOUT THE COMPANY
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">The story of textiles in the subcontinent is the story of Gracious Garments. The group began trading in textiles in the early 1900s. The group entered in the field of manufacturing with the establishment of today's iconic name of Gracious Garments Textile Mills Ltd (GTM). With an installed capacity of more than 130,000 spindles, 300 state-of-the-art weaving machines and most modern yarn dyeing, processing & stitching units, Gracious Garments is a composite unit – making everything from cotton yarn to finished products. Gracious Garments has its own captive power plant comprising of gas engines, gas & steam turbines, and backup diesel engines. Believing in playing its role in protecting the environment, Gracious Garments has also set up a waste water treatment plant to treat 100% of its effluent, bringing it to NEQS levels.</div>
+      </div>
+    </div>
+    <br>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree bg-dark" id="ac1">
+          OUR MISSION
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">At Gracious Garments, we draw our inspirations from the diverse global arena and pack it under one roof, to share the fact that beauty is universal. We constantly strive to challenge the limitations of all the possibilities when it comes to weaving, printing, embroidery & embellishments. The cloth used is not mere fabric for us, we treat it like an artist treats his canvas; with the love, respect and dedication that it deserves. Here at Gracious Garments, we understand that style and fashion are a vital part of your lives and so we strive to bring it to your doorstep in the easiest possible way. Gracious Garments’s motto has always been to provide excellent quality and service.</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+<div class="image">
+  <img src="./images/images (2).jfif" alt="">
+</div>
+<div class="pos_sen">
+<img class="img_deg" src="./images/th.jpg">
+
+<h1>Providing personalized and high quality services.
+</h1>
+<p>The use of cotton for fabric is known to date to prehistoric times; fragments of cotton fabric dated from 5000 BC<br>
+   have been excavated in Mexico and between 6000 BC and 5000 BC in the Indus Valley Civilization. Although<br>
+    cultivated since antiquity, it was the invention of the cotton gin that lowered the cost of production that led to<br>
+     widespread use, and it is the most widely used natural fiber cloth in clothing today.
+
+</p>
+<p>Current estimates for world production are about 25 million tonnes or 110 million bales annually, accounting for<br> 
+  2.5% of the world's arable land. China is the world's largest producer of cotton, but most of this is used domestically.<br>
+   The United States has been the largest exporter for many years.
+
+</p>
+</div>
+  <!-- footer start  -->
+ <div class="content">
+  <div class="container">
+    <div class="single-content">
+
+
+    </div>
+  </div>
+</div>
+
+<footer style="background-color: black;">
+  <div class="container">
+    <div class="row ">
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <img src="./images/logo.png" width="80px" height="80px;" style="border-radius:50%; margin-top:50px ;" alt="">
+          <p>Gracious Garments</p>
+
+          <p></p>
+
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+
+          <ul>
+            <li><a href="./category.html" style="font-size:larger;"> PRODUCTS</a></li>
+            <li><a href="casualwomen.html" style="color: #948360; ">Unstitched</a></li>
+            <li><a href="casualkids.html" style="color: #948360; ">Ready To Wear </a></li>
+            <li><a href="kids.html" style="color: #948360; ">Kids</a></li>
+            <li><a href="category.html" style="color: #948360; "> Wedding Wear</a></li>
+
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+
+          <ul>
+            <li><a href="./category.html" style="font-size:larger;">Returns &Exchage</a></li>
+            <li><a href="./casualwomen.html" style="color: #948360; ">privacy</a></li>
+            <li><a href="./casualkids.html" style="color: #948360; ">FAQs</a></li>
+            <li><a href="./kids.html" style="color: #948360; ">Track You Order</a></li>
+
+            <li><a href="category.html" style="color: #948360; ">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+
+          <ul>
+
+
+
+            <li><a href="./Contact.html" style="font-size:larger;"> Contact Us</a></li>
+            <p style="color: #948360; margin:0px;">
+              <i class="fas fa-envelope me-3 " style="color: #e4c27a ;"></i>
+              graciousgrament@gmail.com
+            </p>
+            <p style="color: #948360; "><i class="fas fa-phone me-3" style="color: #e4c27a ;"></i> + 01 234 567 88</p>
+            <p style="color: #948360; "><i class="fas  fa-print me-3" style="color: #e4c27a ;"></i> + 01 234 567 88
+            </p>
+            <p style="color: #948360;"><i class="fas fa-print me-3" style="color: #e4c27a ;"></i> + 01 234 567 89</p>
+
+
+
+            <div id="iconss">
+
+              <div class="twitter item"><i class="fa-brands fa-twitter" id="twit"></i></div>
+              <div class="Facebook item" id="Fac"> <i class="fa-brands fa-facebook"></i></div>
+              <div class="instagram item" id="ins"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+
+
+
+
+
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <h2></h2>
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer start  -->
+
+  <footer style="display: flex; justify-content: center;background-color: #745f36; margin-top: 0px;">
+    <div id="content">
+
+
+
+      <p id="para" >All rights reserved @ 2024 Develop by Sana Rubab</p>
+    </div>
+
+  </footer>
+</footer>
+
+    <!-- warpper end  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+     crossorigin="anonymous"></script>
+</body>
+
+</html>

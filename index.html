@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gracious Garments</title>
+  <!-- Font awsome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootsstrap link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,
+100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- aos link  -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- style sheet link  -->
+  <link rel="stylesheet" href="./css/Home.css">
+<!-- <link rel="stylesheet" href="./css/category.css"> -->
+
+</head>
+<style>
+  .Cardcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: fit-content;
+    margin: auto;
+    gap: 20px;
+
+}
+.card{
+    width: 400px;
+    aspect-ratio: 9/12;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 8px;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    z-index: 0;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.card::before,
+.card::after{
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card::after{
+    transition-delay: 0.3s;
+    top: 50%;
+}
+.card:hover::before
+,.card:hover::after{
+    transform: scaleX(1);
+}
+.text{
+    position: absolute;
+    inset: 20px;
+    top: auto;
+    z-index: 2;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+h2:hover{
+    color: #948360;
+}
+button{
+    color:#000;
+    background-color:#948360 ;
+    border: none;
+   
+
+    margin-left: 125px;
+    padding: 10px;
+    border-radius: 5px; 
+    transition: all 0.3 ease;
+}
+
+button:hover{
+    color:#948360;
+    transform: scale(1.10);
+
+}
+.categ{
+ margin-top: 0%;
+ margin-bottom: 0%;
+
+}
+h2 .char{
+    opacity: 0;
+    position: relative;
+}
+.card:hover h2 .char,.card:hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+.card:hover h2 .char{
+    transition-delay: calc(0.1s + var(--char-index) * 0.05s);
+}
+
+.container:hover .card:not(:hover ) img{
+    filter: brightness(0.5) blur(5px);
+} 
+</style>
+<body>
+
+
+  <!-- email start  -->
+  <div class="email">
+    <p data-aos="fade-right"
+    data-aos-duration="3000">  Phone : +92216645273 , Email : Graciousgarment.com </p>
+    <p>
+      <i class="fa-brands fa-facebook" data-aos="flip-up"
+      data-aos-duration="3000"></i>
+      <i class="fa-brands fa-twitter" data-aos="flip-up"
+      data-aos-duration="3000"></i>
+      <i class="fa-brands fa-whatsapp"data-aos="flip-up"
+      data-aos-duration="3000"></i>
+      <i class="fa-brands fa-linkedin"data-aos="flip-up"
+      data-aos-duration="3000"></i>
+
+    </p>
+  </div>
+  <!-- email end  -->
+
+
+ 
+  <!-- nav start  -->
+  <nav class="navbar my_navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Gracious Garment" class="logo"data-aos="zoom-in"
+        data-aos-duration="3000"> <b class="logo_text">
+          Gracious Garments</b></a>
+      <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon menue_icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item  mx-3 ">
+            <a class="nav-link  active" aria-current="page" href="./index.html">Home</a>
+          
+          
+            
+          </li>
+
+          <li class="nav-item mx-3">
+            <a class="nav-link " href="./about.html">About</a>
+          </li>
+
+
+          
+
+
+
+          <!-- <li class="nav-item mx-3  ">
+
+            <a class="nav-link "  href="./category.html">Product</a>
+          </li> -->
+
+
+
+        
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./category.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Product
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./casualmen.html">Men casual wear</a></li>
+              <li><a class="dropdown-item" href="./casualwomen.html">women summer collection</a>
+                
+              </li>
+              
+              
+              <li><a class="dropdown-item" href="./casualkids.html">Kids</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item  mx-3">
+            <a class="nav-link " href="Ourteam.html">Team</a>
+          </li>
+
+
+
+          <li class="nav-item mx-3 ">
+            <a class="nav-link " href="./Contact.html">Contact Us</a>
+          </li>
+
+
+        </ul>
+        <i class="fa-regular fa-user My_icons px-3"></i>
+
+        <i class="fa fas-regular fa-bag-shopping  My_icons px-3"></i>
+
+        <i class="fa-solid fa-magnifying-glass My_icons px-3"></i>
+
+
+      </div>
+    </div>
+  </nav>
+  <!-- nav end  -->
+
+
+
+   
+
+
+  <!-- slider start  -->
+
+  <div id="carouselExample" class="carousel slide fluid_container">
+    <div class="carousel-inner"data-aos="fade-up"
+    data-aos-duration="3000">
+      <div class="carousel-item active fluid_container ">
+        <img src="images/image1png.png" height="100%;" alt="...">
+      </div>
+      <div class="carousel-item" data-aos="silde-left" data-aos-delay="100" data-aos-duration="1000">
+        <img src="./images/image2.png" height="100%;" alt="...">
+      </div>
+      <div class="carousel-item" data-aos="silde-left" data-aos-delay="100" data-aos-duration="1000">
+        <img src="./images/GRACIOUS MEN.jpg" height="100%;" alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <img src="./images/image4png.png" style="object-fit: contain;" class="d-block w-100" alt="...">
+      </div>
+      <!-- <div class="carousel-item active">
+        <img src="" height="100%" alt="...">
+      </div>
+    </div> -->
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<div class="categ" style="margin-top: 0%;">
+
+  <hr>
+  <h4 id="productt"style=" text-align:center; ;font: weight 900px; font-size:30px" >CATEGORY </h4>
+  <hr>
+</div>
+<div class="categoryy">
+  
+  <div class="Cardcontainer " >
+        <div class="card" style="padding-top: 0%;">
+            <img src="images/Zeena image 1.webp">
+            <div class="text">
+                <h2  >WOMEN WEAR</h2>
+                <button id="nextButton">EXPlORE MORE</button>
+                
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/embmen image  6.webp">
+            <div class="text">
+                <h2 data-splitting>MEN WEAR</h2>
+                <button id="nextButtonm">EXPlORE MORE</button>
+                
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/kids img 1.webp">
+            <div class="text">
+                <h2 data-splitting>KIDS COLLECTION</h2>
+                <button id="nextButtonk">EXPlORE MORE</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+  <!-- slider end -->
+  <br>
+
+
+  <br>
+
+<!-- vedio start  -->
+<!-- vedio end  -->
+<div data-aos="silde-left" data-aos-delay="100" data-aos-duration="1000" >
+
+  <video  width="100%" height="800px" muted autoplay >
+    <source src="images/Lyle by Faiza Saqlain.mp4">
+  </video>
+</div>
+  <!-- vedio end  -->
+  <!-- buttom cards   ends-->
+  <div class="cardSlider">
+    <div class="card-header">
+
+    </div>
+    <div class="card-body "
+      style="color: #74561a; background-color: #d4ba86; padding: 30px;  margin: 50px 0px 50px 0px;">
+      <blockquote class="blockquote mb-0" data-aos="fade-left"
+      data-aos-duration="3000">
+        <p>“Gracious Garment’s designs capture the essence of sophisticated luxury, inspirit femininity and glamour.”</p>
+        <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer> -->
+      </blockquote>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+  <!-- footer start  -->
+  <div class="content">
+    <div class="container">
+      <div class="single-content">
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer style="background-color: black;">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-box">
+            <img src="./images/logo.png" width="80px" height="80px;" style="border-radius:50%; margin-top:50px ;" alt="">
+            <p>Gracious Garments</p>
+
+            <p></p>
+
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-box">
+
+            <ul>
+              <li><a href="./category.html" style="font-size:larger;"> PRODUCTS</a></li>
+              <li><a href="./casualwomen.html" style="color: #948360; ">Unstitched</a></li>
+              <li><a href="casualkids.html" style="color: #948360; ">Ready To Wear </a></li>
+              <li><a href="./kids.html" style="color: #948360; ">Kids</a></li>
+              <li><a href="category.html" style="color: #948360; "> Wedding Wear</a></li>
+
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-box">
+
+            <ul>
+              <li><a href="#" style="font-size:larger;">Returns &Exchage</a></li>
+              <li><a href="#" style="color: #948360; ">privacy</a></li>
+              <li><a href="#" style="color: #948360; ">FAQs</a></li>
+              <li><a href="#" style="color: #948360; ">Track You Order</a></li>
+
+              <li><a href="#" style="color: #948360; ">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-box">
+
+            <ul>
+
+
+
+              <li><a href="./Contact.html" style="font-size:larger;"> Contact Us</a></li>
+              <p style="color: #948360; margin:0px;">
+                <i class="fas fa-envelope me-3 " style="color: #e4c27a ;"></i>
+                graciousgrament@gmail.com
+              </p>
+              <p style="color: #948360; "><i class="fas fa-phone me-3" style="color: #e4c27a ;"></i> + 01 234 567 88</p>
+              <p style="color: #948360; "><i class="fas  fa-print me-3" style="color: #e4c27a ;"></i> + 01 234 567 88
+              </p>
+              <p style="color: #948360;"><i class="fas fa-print me-3" style="color: #e4c27a ;"></i> + 01 234 567 89</p>
+
+
+
+              <div id="iconss">
+
+                <div class="twitter item"><i class="fa-brands fa-twitter" id="twit"></i></div>
+                <div class="Facebook item" id="Fac"> <i class="fa-brands fa-facebook"></i></div>
+                <div class="instagram item" id="ins"><i class="fa-brands fa-instagram"></i></div>
+              </div>
+
+
+
+
+
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-box">
+            <h2></h2>
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- footer start  -->
+
+    <footer style="display: flex; justify-content: center;background-color: #745f36; padding:30px; margin-top: 0px;">
+      <div id="content">
+
+
+
+        <p id="para" >All rights reserved @ 2024 Develop by Sana Rubab</p>
+      
+      </div>
+
+    </footer>
+  </footer>
+
+  <!-- footer end  -->
+
+  <!-- Back to top ICON -->
+  <a class="goto_top" href="#"><i class="fas fa-arrow-up"></i></a>
+  <!-- Back to top ICON    -->
+  
+  <!-- aos animations link  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<!-- aos animations link  -->
+
+<script>
+
+
+       
+  document.addEventListener("DOMContentLoaded", function() {
+      
+      const nextButton = document.getElementById("nextButton");
+      const nextButtonm = document.getElementById("nextButtonm");
+      const nextButtonk= document.getElementById("nextButtonk");
+      
+  
+      
+   
+      nextButton.addEventListener("click", function() {
+         
+          window.location.href = "women.html";
+      });
+      nextButtonm.addEventListener("click", function() {
+         
+         window.location.href = "mencards.html";
+     });
+      nextButtonk.addEventListener("click", function() {
+         
+         window.location.href = "kids.html";
+     });
+
+   });
+
+  
+  </script> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

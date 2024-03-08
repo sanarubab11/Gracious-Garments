@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracious Garments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<style>
+    body{
+      background: linear-gradient(0deg,rgba(0, 0, 0, 0.123),rgba(0, 0, 0, 0.678)),url(./images/278019146_10160278384512577_5794851646580794193_n.jpg) ;
+       
+      background-repeat: no-repeat;
+      background-size: cover;
+   
+    }
+    :root{
+   --primary-color: #948360 ;
+   --light-color: #fff; 
+   --dark-color:#000;
+   --text-color::
+   
+   }
+  html{
+   scroll-behavior: smooth;
+  } 
+   
+   
+   
+   *{
+       margin: 0%;
+       padding:0%;
+     
+       box-sizing: border-box;
+      
+      
+   }
+   /* body {
+       font-family: "Roboto", sans-serif;
+       background:var(--light-color) ;
+   } */
+
+   /* email start  */
+.email {
+   font-family: 'Roboto', sans-serif;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* height: 50%; */
+   padding: 10px 70px;
+   padding-left: -10px;
+   background:  #948360;
+   color: #fff;
+   cursor: pointer;
+   margin-bottom: -1%;
+
+}
+
+.email i {
+   font-size: 20px;
+   margin: 5px 5px;
+
+}
+/* email end */
+   /* navbar  */
+      .logo{
+   width:50px;
+   height:50px; 
+   
+   border-radius:50%;
+   background-color: var(--primary-color) !important;
+      } 
+      .logo:hover{
+   transform: scale(1.15);
+      }
+      .logo_text{
+       color: var(--primary-color) !important;
+       font-size: larger;
+       transition: all 0.3s ease;
+      }
+      .logo_text:hover{
+       color: var(--light-color) !important;
+       transform: scale(1.15);
+      
+      }
+   
+      .navbar-toggler{
+       background-color: var(--primary-color) !important;
+    
+      }
+      .menue_icon{
+       color: var(--dark-color) !important;
+      
+      }
+   .navbar{
+       /* background-color: #000 !important; */
+   min-height:100px;
+   width: 100%;
+   /* background:var(--dark-color) !important; */
+   
+   }
+   .nav-link{
+       width: max-content ;
+       font-size:16px ;
+       position: relative;
+       cursor: pointer ;
+       color:  var(--primary-color) !important;
+       /* margin-top: 100px auto ; */
+    
+
+
+    
+      
+   
+   }
+   .nav-link::after{
+
+ position: absolute;
+    content: "" ;
+    bottom: -5px !important;
+    left: 0;
+    height: 4px!important ;
+    width: 100%!important ;
+    background: var(--primary-color) !important;
+   
+    transition: 0.3s !important;
+    /* transition-timing-function: ease-in-out ; */
+    /* transform: scaleX(0) ; */
+
+   }
+
+  
+   .nav-link:hover::before{
+       /* transform: scaleX(1) ; */
+       transform: scale(1.15);
+      
+     
+     
+   }
+    .contact-section{
+    text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-section h1{
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-top: 60px;
+    }
+    .contact-section h3{
+        font-size: 3rem;
+        text-transform: uppercase;
+        padding: 0.4rem 0;
+        letter-spacing: 4px;
+        margin-top: -5px;
+    }
+    .line div{
+       margin:  0 0.2rem;
+       margin-top: -10px;
+    }
+    .line div:nth-child(1),
+    .line div:nth-child(3){
+        height: 3px;
+        width: 70px;
+        background: red;
+        border-radius: 5px;
+    }
+    .line{
+        display: flex;
+        align-items: center;
+    }
+    .line div:nth-child(2){
+        width: 10px;
+        height: 10px;
+        background: red;
+        border-radius: 50%;
+    }
+    .text1{
+        font-size: 18px;
+        margin-top: 15px;
+        animation: fadeInUp 2s ease-in;
+        }
+        @keyframes fadeInUp {
+            0%{
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:  sans-serif;
+    }
+    .container{
+        display: flex;
+        justify-content:left;
+        align-items: center;
+        min-height: 300px;
+        margin-left: 250px;
+        margin-top: -5%;
+        position: relative;
+        
+    }
+    .form-box{
+        position: relative;
+        width: 400px;
+        height: 550px;
+        border: 4px solid #fff;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-box h2{
+        color:#fff;
+        text-align: center;
+        font-size: 32px;
+        text-decoration: underline red;
+    }
+    .form-box .input-box{
+        position: relative;
+        margin: 31px 0;
+        width: 310px;
+        border-bottom: 2px solid #fff;
+    }
+    .input-box ::placeholder{
+      color:#fff
+    }
+    .form-box .input-box input{
+        width: 100%;
+        height: 45px;
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 0 20px 0 5px;
+        color: black;
+        font-size: 16px;
+
+    }
+   
+    .input-box i{
+        position: absolute;
+        color:#fff;
+        top: 13px;
+        right: 0;
+    }
+    .input::placeholder{
+        color: #fff;
+    }
+    .btn{
+        color: #fff;
+        background: blue;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        font-size: 17px;
+        cursor: pointer;
+        box-shadow: 3px 0 10px #fff;
+    }
+     .group{
+        display: flex;
+       
+        justify-content: space-between;
+      
+    }
+    .group span a{
+        color: #fff;
+        position: relative;
+        top: 10px;
+        text-decoration: none;
+        font-weight: 500;
+      
+    }
+    .group a:focus{
+        text-decoration: underline;
+    }
+    #result{
+        color: red;
+        font-weight: 600;
+        position: relative;
+        top: 25px;
+
+    }
+        .contact-body{
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 1rem;
+          margin-top: 20px;
+          margin-left: 50px;
+        }
+        .contact-info{
+            margin: 2rem 0;
+            text-align: center;
+            padding: 2rem 0;
+           
+        }
+        .contact-info span{
+            display: block;
+            color: #fff;
+        }
+        .contact-info div{
+            margin: 0.8rem 0;
+            padding: 1rem;
+        }
+        .contact-info span .fas{
+            font-size: 2rem;
+            padding-bottom: 0.8rem;
+            color: red;
+        }
+        .contact-info div span:nth-child(2){
+            font-weight: 500;
+            font-size: 1rem;
+        }
+        .contact-info .text{
+            padding-top: 0.4rem;
+            color: #fff;
+        } 
+         
+        
+          .boxx iframe{
+          margin-left: 100px;
+          border-radius: 25px;
+          box-shadow: 3px 0 10px #fff;
+          margin-left: 8px;
+          margin-top: -0.1%;
+          justify-content: center;
+         }
+         .boxx h1{
+          color: #fff;
+          margin-left: 40px;
+          text-decoration: underline solid red;
+          font-family:  sans-serif;
+          margin-top: -4%;
+         }
+         footer{
+            width: 100%;
+            margin-top: -15%;
+          } 
+    #navlogo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+
+          .single-box p{
+            color:#fff;
+            line-height: 1.9;
+            
+            }
+            .single-box ul{
+                list-style: none;
+                padding: 0;
+              text-decoration: none;
+              }
+              .single-box ul li a{
+              
+              
+              
+              color:#fff;
+              line-height: 2.5;
+              font-size:100;
+              }
+              .single-box ul li a:hover{
+                  color: #8d691d;
+                  text-decoration: underline;
+              }
+              #h22{
+                color: grey;
+                font-size: 30px;
+                
+                    }
+                    #iconss{
+                font-size: 20px;
+                color: #948360;
+                display: flex;
+                justify-content: space-evenly;
+                margin: 5px;
+                transition: all 0.3s ease;
+                    }
+                    #iconss:hover{
+                color: #e4c27a;
+                font-size: 30px;
+                    }
+                    p:hover{
+                color:#000;
+                transform:scale(1.10) ;
+                    }
+                    @media(max-width:767px){
+                        .single-box{
+                            margin-bottom: 50px;
+                        }
+                            }
+                            @media(min-width:768px) and (max-width:991px){
+                        .single-box{
+                            margin-bottom: 50px;
+                        }
+                            }
+              /* footer navlogo end */
+          
+    
+</style>
+<body>
+
+    <div class="email">
+        <p data-aos="fade-right"
+        data-aos-duration="3000">  Phone : +92216645273 , Email : Graciousgarment.com </p>
+        <p>
+          <i class="fa-brands fa-facebook" data-aos="flip-up"
+          data-aos-duration="3000"></i>
+          <i class="fa-brands fa-twitter" data-aos="flip-up"
+          data-aos-duration="3000"></i>
+          <i class="fa-brands fa-whatsapp"data-aos="flip-up"
+          data-aos-duration="3000"></i>
+          <i class="fa-brands fa-linkedin"data-aos="flip-up"
+          data-aos-duration="3000"></i>
+      
+        </p>
+      </div>
+      <!-- email end  -->
+        <!-- nav start  -->
+        <div class="navbar">
+      <nav class="navbar my_navbar navbar-expand-lg bg-body-tertiary ">
+      
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Gracious Garment" class="logo"data-aos="zoom-in"
+            data-aos-duration="3000"> <b class="logo_text">
+              Gracious Garments</b></a>
+          <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon menue_icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item  mx-3 ">
+                <a class="nav-link  active" aria-current="page" href="./index.html">Home</a>
+              
+              
+                
+              </li>
+      
+              <li class="nav-item mx-3">
+                <a class="nav-link " href="./about.html">About</a>
+              </li>
+      
+      
+              
+      
+      
+      
+               <li class="nav-item mx-3  ">
+      
+                <a class="nav-link "  href="./category.html">Product</a>
+              </li> 
+      
+      
+      
+            
+      
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./category.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Product
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./casualmen.html">Men casual wear</a></li>
+                  <li><a class="dropdown-item" href="./casualwomen.html">women summer collection</a>
+                    
+                  </li>
+                  
+                  
+                  <li><a class="dropdown-item" href="./casualkids.html">Kids</a></li>
+                </ul>
+              </li>
+      
+              <li class="nav-item  mx-3">
+                <a class="nav-link " href="Ourteam.html">Team</a>
+              </li>
+      
+      
+      
+              <li class="nav-item mx-3 ">
+                <a class="nav-link " href="./Contact.html">Contact Us</a>
+              </li>
+      
+      
+            </ul>
+            <i class="fa-regular fa-user My_icons px-3"></i>
+      
+            <i class="fa fas-regular fa-bag-shopping  My_icons px-3"></i>
+      
+            <i class="fa-solid fa-magnifying-glass My_icons px-3"></i>
+      
+      
+          </div>
+       
+      </nav>
+    </div>
+     <section class="contact-section">
+        <div clas="contact-bg">
+            <h1>Get in Touch with Us</h1>
+            <h3>contact us</h3>
+       </div>
+       <div class="line">
+          <div></div>
+          <div></div> 
+          <div></div> 
+       </div> 
+       <p class="text1">This excellent multidimensional Contact Us page begins with a statement to<br>
+         build trust and empathy. And they provide four options for people to get<br>
+         in touch with them.
+      </p>   
+     
+    </section>
+    <div class="container">
+      <div class="form-box">
+        <form action="" name="formfill" onsubmit="return validation()">
+              <h2>Register</h2>
+              <p id="result">head</p>
+              <div class="input-box">
+               <i class="fa-solid fa-user"></i>
+                  <input type="text" name="Username" placeholder="Username">
+              </div>
+              <div class="input-box">
+               <i class="fa-solid fa-envelope"></i>
+                 <input type="email" name="Email" placeholder="Email">
+             </div>
+             <div class="input-box">
+               <i class="fa-solid fa-lock"></i>
+                 <input type="password" name="Password" placeholder="Password">
+             </div>
+             <div class="input-box">
+               <i class="fa-solid fa-lock"></i>
+                 <input type="password" name="CPassword" placeholder="Confirm password">
+             </div>
+              <div class="button">
+                 <input type="submit" class="btn" value="Register">
+              </div>
+              <div class="group">
+               <span><a href="">Forget.Password</a></span>
+               <span><a href="">Login</a></span>
+              </div>
+        </form>
+       
+       
+        
+      </div>
+      <div class="contact-body">
+        <div class="contact-info">
+           <div>
+               <span><i class="fas fa-mobile-alt"></i></span>
+               <span>Phone No.</span>
+               <span class="text">1-2392-23928-2</span>
+           </div>
+           <div>
+              <span><i class="fas fa-envelope-open"></i></span>
+              <span>E-mail.</span>
+              <span class="text">mail@company.com</span>
+          </div> 
+          <div>
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <span>Address.</span>
+              <span class="text">Grachious Garment Karachi
+                  TX, Pakistan
+              </span>
+          </div>  
+          <div>
+              <span><i class="fas fa-clock"></i></span>
+              <span>Opening Hours.</span>
+              <span class="text">Monday-Friday (9:00 AM to 5:00 PM) </span>
+          </div>   
+        </div>
+      </div>       
+      
+  
+  </div>
+  <div class="boxx">
+    <h1>Search a Google map!</h1> 
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d231647.31576118057!2d67.164869!3d24.881286!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2sus!4v1708024123185!5m2!1sen!2sus" width="1330" height="250" style="border:0;"
+   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div> 
+<div class="content">
+  <div class="container">
+    <div class="single-content">
+
+
+    </div>
+  </div>
+</div>
+
+<footer style="background-color: black;">
+  <div class="container">
+    <div class="row ">
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <img src="./images/logo.png" width="80px" height="80px;" style="border-radius:50%; margin-top:50px ;" alt="">
+          <p>Gracious Garments</p>
+
+          <p></p>
+
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+
+          <ul>
+            <li><a href="./category.html" style="font-size:larger;"> PRODUCTS</a></li>
+            <li><a href="casualwomen.html" style="color: #948360; ">Unstitched</a></li>
+            <li><a href="./casualkids.html" style="color: #948360; ">Ready To Wear </a></li>
+            <li><a href="./kids.html" style="color: #948360; ">Kids</a></li>
+            <li><a href="category.html" style="color: #948360; "> Wedding Wear</a></li>
+
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+
+          <ul>
+            <li><a href="#" style="font-size:larger;">Returns &Exchage</a></li>
+            <li><a href="#" style="color: #948360; ">privacy</a></li>
+            <li><a href="#" style="color: #948360; ">FAQs</a></li>
+            <li><a href="#" style="color: #948360; ">Track You Order</a></li>
+
+            <li><a href="#" style="color: #948360; ">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+
+          <ul>
+
+
+
+            <li><a href="#" style="font-size:larger;"> Contact Us</a></li>
+            <p style="color: #948360; margin:0px;">
+              <i class="fas fa-envelope me-3 " style="color: #e4c27a ;"></i>
+              graciousgrament@gmail.com
+            </p>
+            <p style="color: #948360; "><i class="fas fa-phone me-3" style="color: #e4c27a ;"></i> + 01 234 567 88</p>
+            <p style="color: #948360; "><i class="fas  fa-print me-3" style="color: #e4c27a ;"></i> + 01 234 567 88
+            </p>
+            <p style="color: #948360;"><i class="fas fa-print me-3" style="color: #e4c27a ;"></i> + 01 234 567 89</p>
+
+
+
+            <div id="iconss">
+
+              <div class="twitter item"><i class="fa-brands fa-twitter" id="twit"></i></div>
+              <div class="Facebook item" id="Fac"> <i class="fa-brands fa-facebook"></i></div>
+              <div class="instagram item" id="ins"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+
+
+
+
+
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <h2></h2>
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer start  -->
+
+  <footer style="display: flex; justify-content: center;background-color: #745f36; margin-top: 0px;">
+    <div id="content">
+
+
+
+      <p id="para" >All rights reserved @ 2024 Develop by Sana Rubab</p>
+    </div>
+
+  </footer>
+</footer>
+
+  
+   
+
+   <script src="./scrip.js" ></script>      
+         
+</body>
+</html>

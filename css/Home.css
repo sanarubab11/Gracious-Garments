@@ -1,0 +1,231 @@
+:root{
+    --primary-color: #948360 ;
+    --light-color: #fff; 
+    --dark-color:#000;
+    --text-color::
+    }
+   html{
+    scroll-behavior: smooth;
+   } 
+    
+    
+    
+    *{
+        margin: 0%;
+        padding:0%;
+        box-sizing: border-box;
+    
+    }
+    body {
+        font-family: "Roboto", sans-serif;
+        background:var(--light-color) ;
+    }
+
+    /* email start  */
+.email {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    padding: 10px 70px;
+    padding-left: -10px;
+    background:  #948360;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.email i {
+    font-size: 20px;
+    margin: 5px 5px;
+
+}
+/* email end */
+    /* navbar  */
+       .logo{
+    width:50px;
+    height:50px; 
+    
+    border-radius:50%;
+    background-color: var(--primary-color) !important;
+       } 
+       .logo:hover{
+    transform: scale(1.15);
+       }
+       .logo_text{
+        color: var(--primary-color) !important;
+        font-size: larger;
+        transition: all 0.3s ease;
+       }
+       .logo_text:hover{
+        color: var(--light-color) !important;
+        transform: scale(1.15);
+       
+       }
+    
+       .navbar-toggler{
+        background-color: var(--primary-color) !important;
+     
+       }
+       .menue_icon{
+        color: var(--dark-color) !important;
+       
+       }
+    .navbar{
+        /* background-color: #000 !important; */
+    min-height:100px;
+    /* background:var(--dark-color) !important; */
+    
+    }
+    .nav-link{
+        width: max-content ;
+        font-size:16px ;
+        position: relative;
+        cursor: pointer ;
+        color:  var(--primary-color) !important;
+        /* margin-top: 100px auto ; */
+     
+
+
+     
+       
+    
+    }
+    .nav-link::after{
+
+  position: absolute;
+     content: "" ;
+     bottom: -5px !important;
+     left: 0;
+     height: 4px!important ;
+     width: 100%!important ;
+     background: var(--primary-color) !important;
+    
+     transition: 0.3s !important;
+     /* transition-timing-function: ease-in-out ; */
+     /* transform: scaleX(0) ; */
+
+    }
+
+   
+    .nav-link:hover::before{
+        /* transform: scaleX(1) ; */
+        transform: scale(1.15);
+       
+      
+      
+    }
+     /* navbar end  */
+
+
+
+
+
+     
+
+
+     /* icons start  */
+    .My_icons{
+        color: #948360 !important;
+        padding: 10px !important;
+        transition: all 0.3s ease;
+    
+    }
+    .My_icons:hover{
+       
+    transform: scale(1.15);
+    }
+    /* icons end  */
+
+     /* goto_top start  */
+    .goto_top {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        background:#000;
+        bottom:25px;
+        right: 20px;
+       
+         text-decoration: none;
+         text-align: center;
+         justify-content: center;
+         text-decoration: none;
+         line-height: 20px;
+         color:  #948360;
+       
+         border-radius: 5px;
+          padding-left: 10px; 
+          padding-right:10px;
+          padding-top:10px ;
+        
+         transition: all 0.5s ease
+      
+           }
+           .goto_top:hover{
+    background-color: #fff;
+           }
+           /* goto_top end  */
+           /* footer navlogo  start */
+           
+           #navlogo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+
+          .single-box p{
+            color:#fff;
+            line-height: 1.9;
+            
+            }
+            .single-box ul{
+                list-style: none;
+                padding: 0;
+              text-decoration: none;
+              }
+              .single-box ul li a{
+              
+              
+              
+              color:#fff;
+              line-height: 2.5;
+              font-size:100;
+              }
+              .single-box ul li a:hover{
+                  color: #8d691d;
+                  text-decoration: underline;
+              }
+              #h22{
+                color: grey;
+                font-size: 30px;
+                
+                    }
+                    #iconss{
+                font-size: 20px;
+                color: #948360;
+                display: flex;
+                justify-content: space-evenly;
+                margin: 5px;
+                transition: all 0.3s ease;
+                    }
+                    #iconss:hover{
+                color: #e4c27a;
+                font-size: 30px;
+                    }
+                    p:hover{
+                color:#000;
+                transform:scale(1.10) ;
+                    }
+                    @media(max-width:767px){
+                        .single-box{
+                            margin-bottom: 50px;
+                        }
+                            }
+                            @media(min-width:768px) and (max-width:991px){
+                        .single-box{
+                            margin-bottom: 50px;
+                        }
+                            }
+              /* footer navlogo end */

@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    /* font-family: 'Courier New', Courier, monospace; */
+text-transform: uppercase;
+
+  }
+
+  #page_one {
+    border: 2px solid black;
+    padding: 10px 10px 10px 10px;
+    object-fit: contain;
+
+  }
+
+  #row_1,
+  #row_2,
+  #row_3,
+  #row_4,
+  #row_5 {
+    padding-top: 50px;
+    margin: 20px;
+    /* transition: all 0.3s; */
+
+
+
+  }
+
+  .card {
+    transition: all 0.3s;
+  }
+
+  .card:hover {
+    transform: scale(1.10);
+
+  }
+
+  #hh1 {
+    padding-top: 30px;
+    font-weight: bolder;
+
+  }
+
+  #hh1:hover {
+    transform: scale(1.10);
+    text-decoration: underline;
+    color: #948360
+  }
+
+  .btn {
+    background-color: #000;
+    color: #948360;
+    /* background-color: #948360 ;
+  color:#000; */
+  }
+  .discount-tag{
+position: absolute;
+top: 5px;
+left: 10px;
+background-color:red;
+color: #fff;
+padding: 5px;
+/* width: 50px;
+height: 50px; */
+border-radius: 5px;
+
+  }
+  .discount-tag span{
+    font-weight: bolder;
+  }
+  .sold_out{
+    position: absolute;
+top: 0px;
+right: 10px;
+
+background-color:red;
+color: #fff;
+padding: 5px;
+/* width: 50px;
+height: 50px; */
+border-radius: 5px;
+  }
+  .sold_out span{
+    font-weight: bold;
+  }
+  /* goto_top start  */
+  .goto_top {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background:#000;
+    bottom:25px;
+    right: 20px;
+   
+     text-decoration: none;
+     text-align: center;
+     justify-content: center;
+     text-decoration: none;
+     line-height: 20px;
+     color:  #948360;
+   
+     border-radius: 5px;
+      padding-left: 10px; 
+      padding-right:10px;
+      padding-top:10px ;
+    
+     transition: all 0.5s ease
+  
+       }
+       .goto_top:hover{
+background-color: #fff;
+       }
+       /* goto_top end  */

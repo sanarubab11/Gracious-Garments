@@ -1,0 +1,167 @@
+h1{
+    color: #aa9870;
+    font-size: 48px;
+    font-weight: bold;
+   
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+  }
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+  span{
+    color: #aa9870;
+  }
+  .line div{
+     margin:  0 0.2rem;
+     margin-top: -10px;
+    
+  }
+  .line div:nth-child(1),
+  .line div:nth-child(3){
+      height: 3px;
+      width: 70px;
+      background: red;
+      border-radius: 5px;
+  }
+  .line{
+      display: flex;
+      align-items: center;
+      margin-left: 590px;
+      margin-top: 1%;
+  }
+  .line div:nth-child(2){
+      width: 10px;
+      height: 10px;
+      background: red;
+      border-radius: 50%;
+  }
+  .accorin{
+height: 400px;
+width: 600px;
+margin-left: 50px;
+margin-top: 50px;
+
+  }
+  .image_container img{
+height: 400px;
+width: 600px;
+animation: fadeInUp 2s ease;
+      }
+      @keyframes fadeInUp {
+          0%{
+              opacity: 0;
+              transform: translateY(50px);
+          }
+          100%{
+              opacity: 1;
+              transform: translateY(0px);
+          }
+      }
+    
+
+  
+  .image_container {
+    display: flex;
+justify-content: center;
+align-items: end;
+  }
+#ac1 {
+background-color:#aa9870;
+color: black;
+font-weight: bold;
+/* margin: 30px 30px; */
+
+
+
+}
+
+.accordion-button {
+background-color: #fff; 
+color: #fff;
+}
+.accordion-button.BTTN_2 {
+color:black !important;
+}
+
+.image img{
+      width:100% ;
+      height: 400px;
+      position: absolute;
+      margin-top: 80px;
+}
+  
+  .img_deg{
+      float: right;
+      height: 300px;
+      width: 20%;
+      margin-right: 250px;
+      margin-top: 50px;
+      animation: fadeInUp 2s ease;
+      }
+      @keyframes fadeInUp {
+          0%{
+              opacity: 0;
+              transform: translateY(50px);
+          }
+          100%{
+              opacity: 1;
+              transform: translateY(0px);
+          }
+      }
+    
+          
+      
+  
+
+
+  
+  
+  .pos_sen{
+    position:absolute;
+    width: 100%;
+    height: 400px;
+    
+    margin-top: 80px;
+    background-color: rgb(112, 95, 95);
+    opacity: 0.7;
+    
+  }
+  .pos_sen h1{
+      color:white ;
+      margin-top:60px;
+      font-size: 34px ;
+      margin-left: 200px ;
+      animation: fadeInUp 2s ease;
+      }
+      @keyframes fadeInUp {
+          0%{
+              opacity: 0;
+              transform: translateY(50px);
+          }
+          100%{
+              opacity: 1;
+              transform: translateY(0px);
+          }
+      }
+      
+     .pos_sen p{
+      font-size: 12px;
+      color: white;
+      margin-top: 20px;
+      margin-left: 200px;
+      animation: fadeInUp 2s ease;
+      }
+      @keyframes fadeInUp {
+          0%{
+              opacity: 0;
+              transform: translateY(50px);
+          }
+          100%{
+              opacity: 1;
+              transform: translateY(0px);
+          }
+      }
